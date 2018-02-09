@@ -21,7 +21,7 @@ let fiveDesc = document.querySelector("#fiveDesc");
 
 // current weather
 fetch(
-  "http://api.openweathermap.org/data/2.5/weather?zip=02780,us&units=imperial&APPID=38c7a3bf4046499d8be4a15128e0d64a",
+  "https://api.openweathermap.org/data/2.5/weather?zip=02780,us&units=imperial&APPID=38c7a3bf4046499d8be4a15128e0d64a",
   { mode: "cors" }
 )
   .then(function(response) {
@@ -42,7 +42,7 @@ fetch(
 
 // 5 day forcast
 fetch(
-  "http://api.openweathermap.org/data/2.5/forecast?zip=02780,us&units=imperial&APPID=38c7a3bf4046499d8be4a15128e0d64a",
+  "https://api.openweathermap.org/data/2.5/forecast?zip=02780,us&units=imperial&APPID=38c7a3bf4046499d8be4a15128e0d64a",
   { mode: "cors" }
 )
   .then(function(response) {
