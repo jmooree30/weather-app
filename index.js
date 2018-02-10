@@ -18,6 +18,7 @@ let fourDesc = document.querySelector("#fourDesc");
 let fiveIcon = document.querySelector("#fiveIcon");
 let fiveTemp = document.querySelector("#fiveTemp");
 let fiveDesc = document.querySelector("#fiveDesc");
+let body = document.querySelector("body");
 
 // current weather
 fetch(
@@ -28,6 +29,12 @@ fetch(
     return response.json();
   })
   .then(function(response) {
+    let ts = Math.round(new Date().getTime() / 1000) + 86400;
+    if (ts < response.sys.sunset) {
+      body.style.backgroundImage = "url('assets/1.png')";
+    } else {
+      body.style.backgroundImage = "url('assets/2.jpg')";
+    }
     let iconCode = response.weather[0].icon;
     let iconUrl = "http://openweathermap.org/img/w/" + iconCode + ".png";
     currentIcon.src = iconUrl;
@@ -49,7 +56,6 @@ fetch(
     return response.json();
   })
   .then(function(response) {
-    console.log(response);
     // day 1
     let iconOneCode = response.list[2].weather[0].icon;
     let iconOneUrl = "http://openweathermap.org/img/w/" + iconOneCode + ".png";
