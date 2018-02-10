@@ -39,25 +39,18 @@ input{
   font-size: 2vh;
 }
 
-.imageContainer{
-  display: block;
-  margin: 0 auto;
-  width: 20%;
-  max-height: 200px;
-}
-
 #currentLocation{
   font-size: 30px;
 }
 
 #currentIcon{
-    width: 100%;
+    width: 10vh;
     height: auto;
     width: auto\9; /* ie8 */
 }
 
 #currentTemp{
-font-size: 10vw;
+  font-size: 10vw;
 }
 
 .loader {
@@ -81,4 +74,13 @@ font-size: 10vw;
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
+}
+
+ @media only screen and (max-width: 500px) {
+  #currentTemp{
+    font-size: 20vw;
+  }
+  #currentIcon{
+    width: 20vh;
+  }
 }
