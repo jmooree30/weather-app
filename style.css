@@ -1,4 +1,8 @@
-
+*{
+font-family: "Segoe UI Light","Segoe WP Light","Segoe WP","Segoe UI",Arial,Sans-Serif;
+color: #fff;
+font-weight: bold;
+}
 
 html, body{
   min-height:100%;
@@ -10,10 +14,11 @@ html, body{
 
 .contain{
   text-align: center;
-  width:100%;
 }
 
 .container{
+  padding:7px;
+  border-top:1px solid white;
   width: 100%;
   position: absolute;
   bottom:10px;
@@ -23,4 +28,18 @@ html, body{
 
 .contain1{
   flex:1;
+}
+
+#currentLocation{
+  font-size: 30px;
+}
+
+#currentIcon{
+display: inline;
+}
+
+#currentTemp{
+display: inline;
+font-size: 90px;
+padding-bottom: 40px;
 }
