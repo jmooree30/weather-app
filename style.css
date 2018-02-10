@@ -8,15 +8,17 @@ html, body{
   margin:0;
 }
 
-.container{
-  display: flex;
-  text-align: center;
-}
-
 .contain{
   text-align: center;
-  height:500px;
   width:100%;
+}
+
+.container{
+  width: 100%;
+  position: absolute;
+  bottom:10px;
+  display: flex;
+  text-align: center;
 }
 
 .contain1{
