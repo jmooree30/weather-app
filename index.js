@@ -40,7 +40,7 @@ function weather() {
     })
     .then(function(response) {
       let ts = Math.round(new Date().getTime() / 1000);
-      if (ts > response.sys.sunset) {
+      if (ts < response.sys.sunset) {
         body.style.backgroundImage = "url('assets/1.png')";
       } else {
         body.style.backgroundImage = "url('assets/2.jpg')";
