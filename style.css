@@ -31,15 +31,23 @@ html, body{
   font-size: 2vh;
 }
 
+.imageContainer{
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  max-height: 200px;
+}
+
 #currentLocation{
   font-size: 30px;
 }
 
 #currentIcon{
-display: inline;
+    width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
 
 #currentTemp{
-display: inline;
 font-size: 10vw;
 }

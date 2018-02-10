@@ -8,12 +8,18 @@
 </head>
 <body>
   <div class="contain">
-      <div id="currentLocation"></div>
-      <div id="currentDesc"></div>
-      <div id="currentHumidity"></div>
-      <img id="currentIcon" src="" height="200px" width="200px">
-      <div id="currentTemp"></div>
-    </div>
+    <form>
+      <label>Enter zip code:</label>
+      <input type="text" pattern="[0-9]{5}" title="5 digit zip code">
+    </form>
+    <div id="currentLocation"></div>
+    <div id="currentDesc"></div>
+    <div id="currentHumidity"></div>
+      <div class="imageContainer">
+        <img id="currentIcon" src="">
+      </div>
+    <div id="currentTemp"></div>
+  </div>
 
   <div class="container">
     <div class="contain1">
