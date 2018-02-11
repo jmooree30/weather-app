@@ -103,7 +103,7 @@ function weather() {
       let iconFiveCode = response.list[34].weather[0].icon;
       let iconFiveUrl =
         "http://openweathermap.org/img/w/" + iconFiveCode + ".png";
-      fiveTemp.innerHTML = response.list[34].main.temp.toFixed(0) + " degrees";
+      fiveTemp.innerHTML = response.list[34].main.temp.toFixed(0);
       fiveIcon.src = iconFiveUrl;
       fiveDesc.innerHTML = response.list[34].weather[0].description;
     })
