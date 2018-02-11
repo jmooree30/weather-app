@@ -39,7 +39,7 @@ function weather() {
       return response.json();
     })
     .then(function(response) {
-      let ts = Math.round(new Date().getTime() / 1000);
+      let ts = Math.round(new Date().getTime() / 1000) + 86400;
       if (ts < response.sys.sunset) {
         body.style.backgroundImage = "url('assets/1.png')";
       } else {
