@@ -1,7 +1,7 @@
 *{
-font-family: "Segoe UI Light","Segoe WP Light","Segoe WP","Segoe UI",Arial,Sans-Serif;
-color: #fff;
-font-weight: bold;
+  font-family: "Segoe UI Light","Segoe WP Light","Segoe WP","Segoe UI",Arial,Sans-Serif;
+  color: #fff;
+  font-weight: bold;
 }
 
 html, body{
@@ -36,7 +36,8 @@ input{
 
 .contain1{
   flex:1;
-  font-size: 2vh;
+  font-size: 4vh;
+  border-right: 1px solid white;
 }
 
 #currentLocation{
@@ -44,13 +45,13 @@ input{
 }
 
 #currentIcon{
-    width: 10vh;
-    height: auto;
-    width: auto\9; /* ie8 */
+  width: 16vh;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 
 #currentTemp{
-  font-size: 10vw;
+  font-size: 7vw;
 }
 
 .loader {
@@ -76,11 +77,14 @@ input{
   100% { transform: rotate(360deg); }
 }
 
- @media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px) {
   #currentTemp{
     font-size: 20vw;
   }
   #currentIcon{
     width: 20vh;
+  }
+  .contain1{
+  font-size: 2vh;
   }
 }
